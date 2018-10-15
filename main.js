@@ -56,22 +56,22 @@ let mySound, bg;
 function preload() {
     soundFormats('mp3');
     mySound = loadSound('assets/sounds/main_music.mp3');
-    bg = loadImage('assests/spritesnframes/mountolympus.png');
+    bg = loadImage('assets/spritesnframes/mountolympus.png');
 }
 
 function setup() {
     createCanvas(size, size);
     scale(60000.5);
-    initializeSprites();
+    // initializeSprites();
     mySound.setVolume(0.1);
     mySound.play();
 }
 
 function draw() {
     background(bg);
-    drawSprites();
-    drawviewPoint();
-    detectCollisionWithNPCs();
-    detectCollisionWithObjects();
-    handleMovement();
+    // drawSprites();
+    // drawviewPoint();
+    // detectCollisionWithNPCs();
+    // detectCollisionWithObjects();
+    // handleMovement();
 }
